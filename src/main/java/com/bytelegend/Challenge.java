@@ -16,7 +16,7 @@ public class Challenge {
      */
     public static boolean isSymmetric(String str) {
         int start = 0;
-        int end = str.length();
+        int end = str.length() - 1;
         while (start < end) {
             char c1 = str.charAt(start);
             char c2 = str.charAt(end);
