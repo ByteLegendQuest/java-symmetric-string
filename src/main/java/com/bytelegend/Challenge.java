@@ -15,6 +15,17 @@ public class Challenge {
      * <p>If the given string is a symmetric string, then return `true`; otherwise, return `false`.
      */
     public static boolean isSymmetric(String str) {
-        return false;
+        char[] chars = str.toCharArray();
+        int count = chars.length;
+        int begin = 0;
+        int end = chars.length-1;
+        while(begin < end) {
+            if(chars[begin] != chars[end]) {
+                return false;
+            }
+            begin++;
+            end--;
+        }
+        return true;
     }
 }
