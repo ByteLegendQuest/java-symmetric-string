@@ -1,7 +1,5 @@
 package com.bytelegend;
 
-import java.lang.StringBuilder;
-
 public class Challenge {
     public static void main(String[] args) {
         System.out.println(isSymmetric("1234"));
@@ -17,6 +15,6 @@ public class Challenge {
      * <p>If the given string is a symmetric string, then return `true`; otherwise, return `false`.
      */
     public static boolean isSymmetric(String str) {
-        return str.equals(new StringBuilder(str).reverse());
+        return str.equals(new StringBuilder(str).reverse().toString());
     }
 }
