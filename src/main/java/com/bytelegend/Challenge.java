@@ -27,8 +27,8 @@ public class Challenge {
         double point2 = mid;
         while (point1 < mid && point2 < length) {
             if (str.charAt(point1) == str.charAt((int) point2)) {
-                point1++;
-                point2++;
+                point1 += 1;
+                point2 += 1;
             } else {
                 return false;
             }
