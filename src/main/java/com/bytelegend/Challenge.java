@@ -18,15 +18,15 @@ public class Challenge {
         double mid;
         int length = str.length();
         if (length % 2 == 0) {
-            mid = Math.floor(length/2);
+            mid = Math.floor(length / 2);
         } else {
-            mid = Math.floor(length/2) + 1;
+            mid = Math.floor(length / 2) + 1;
         }
 
         int point1 = 0;
         double point2 = mid;
         while (point1 < mid && point2 < length) {
-            if(str.charAt(point1) == str.charAt((int)point2)) {
+            if (str.charAt(point1) == str.charAt((int) point2)) {
                 point1++;
                 point2++;
             } else {
